@@ -1,0 +1,16 @@
+body {
+    background-image:url(../images/mosaic.png) 
+
+}
+
+.container {
+    border: 5px solid red;
+}
+.rowstyle {
+    border: 5px solid blue;
+    padding: 2px 2px 2px 2px;
+}
+.colstyle {
+    border: 2px solid green;
+    padding: 2px 2px 2px 2px;
+}
