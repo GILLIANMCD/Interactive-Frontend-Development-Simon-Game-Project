@@ -2,6 +2,11 @@ body {
     background-image:url(../images/mosaic.png) 
 
 }
+h5 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
 
 .container {
     border: 5px solid red;
@@ -13,4 +18,197 @@ body {
 .colstyle {
     border: 2px solid green;
     padding: 2px 2px 2px 2px;
+}
+/*Design Inspired by Free Code Camp*/
+#bg-circle{
+  background: #385a94;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  border-style: solid;
+  border-width: 10px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 8px 8px 15px 5px #e0dddd10;
+}
+
+#green {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 250px 0 0 0;
+  -moz-border-radius: 250px 0 0 0;
+  -webkit-border-radius: 250px 0 0 0;
+  background: darkgreen;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px -250px;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#red {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 250px 0 0;
+  -moz-border-radius: 0 250px 0 0;
+  -webkit-border-radius: 0 250px 0 0;
+  background: darkred;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px 0px;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#yellow {
+position: absolute;
+height: 250px;
+width: 250px;
+border-radius: 0 0 0 250px;
+-moz-border-radius: 0 0 0 250px;
+-webkit-border-radius: 0 0 0 250px;
+background: goldenrod;
+top: 50%;
+left: 50%;
+margin: 0px -250px 0px -250px;
+border-style: solid;
+border-width: 5px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+    }
+
+#blue {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 250px 0;
+  -moz-border-radius: 0 0 250px 0;
+  -webkit-border-radius: 0 0 250px 0;
+  background: darkblue;
+  top: 50%;
+  left: 50%;
+  margin: 0px 0px -250px 0px;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    }
+
+#inner-circle {
+    position: absolute;
+    background: #dedada;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*Mobile Design Inspired from Free Code Camp*/
+@media (min-width: 374px) {
+#bg-circle{
+  height: 300px;
+  width: 300px;
+  }
+#green {
+height: 150px;
+width: 150px;
+border-radius: 150px 0 0 0;
+-moz-border-radius: 150px 0 0 0;
+-webkit-border-radius: 150px 0 0 0;
+margin: -150px 0px 0px -150px;
+}
+#red {
+ height: 150px;
+ width: 150px;
+ border-radius: 0 150px 0 0;
+ -moz-border-radius: 0 150px 0 0;
+ -webkit-border-radius: 0 150px 0 0;
+ margin: -150px 0px 0px 0px;
+}
+
+#yellow {
+ height: 150px;
+ width: 150px;
+ border-radius: 0 0 0 150px;
+ -moz-border-radius: 0 0 0 150px;
+ -webkit-border-radius: 0 0 0 150px;
+  margin: 0px -150px 0px -150px;
+}
+#blue {
+height: 150px;
+width: 150px;
+border-radius: 0 0 150px 0;
+-moz-border-radius: 0 0 150px 0;
+-webkit-border-radius: 0 0 150px 0;
+margin: 0px 0px -150px 0px;
+}
+
+#inner-circle {
+height: 175px;
+width: 175px;
+margin: -87.5px 0px 0px -87.5px;
+}
+}
+/*Responsive for Tablet Devices*/
+@media (min-width: 768px) {
+#bg-circle {
+  height: 400px;
+  width: 400px;
+    }
+#green {
+height: 200px;
+width: 200px;
+border-radius: 200px 0 0 0;
+-moz-border-radius: 200px 0 0 0;
+-webkit-border-radius: 200px 0 0 0;
+margin: -200px 0px 0px -200px;
+}
+#red {
+ height: 200px;
+ width: 200px;
+ border-radius: 0 200px 0 0;
+ -moz-border-radius: 0 200px 0 0;
+ -webkit-border-radius: 0 200px 0 0;
+ margin: -200px 0px 0px 0px;
+}
+
+#yellow {
+ height: 200px;
+ width: 200px;
+ border-radius: 0 0 0 200px;
+ -moz-border-radius: 0 0 0 200px;
+ -webkit-border-radius: 0 0 0 200px;
+  margin: 0px -200px 0px -200px;
+}
+#blue {
+height: 200px;
+width: 200px;
+border-radius: 0 0 200px 0;
+-moz-border-radius: 0 0 200px 0;
+-webkit-border-radius: 0 0 200px 0;
+margin: 0px 0px -200px 0px;
+}
+
+#inner-circle {
+height: 200px;
+width: 200px;
+margin: -100px 0px 0px -100px;
+}
 }
