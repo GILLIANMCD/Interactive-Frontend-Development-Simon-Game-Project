@@ -7,6 +7,14 @@ h5 {
     font-size: 3rem;
     text-align: center;
 }
+.heading {
+    position: relative;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight:900;
+    color: #212529;
+}
 
 .container {
     border: 5px solid red;
@@ -119,9 +127,34 @@ box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+.inner-heading{
+  text-align: left;
+  margin-top: 2px;
+  font-size: 1rem;
+  margin: 5px;
+  text-transform: uppercase;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 0;
+}
+.speedbtn li {
+    width: 15px;
+    height: 15px;
+    padding: 7px 0;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 1px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
 
 /*Mobile Design Inspired from Free Code Camp*/
-@media (min-width: 374px) {
+@media (min-width: 375px) {
 #bg-circle{
   height: 300px;
   width: 300px;
