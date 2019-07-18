@@ -7,26 +7,10 @@ h5 {
     font-size: 3rem;
     text-align: center;
 }
-.heading {
-    position: relative;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 30px;
-    text-align: center;
-    font-weight:900;
-    color: #212529;
+ol {
+  color:#fff;
 }
 
-.container {
-    border: 5px solid red;
-}
-.rowstyle {
-    border: 5px solid blue;
-    padding: 2px 2px 2px 2px;
-}
-.colstyle {
-    border: 2px solid green;
-    padding: 2px 2px 2px 2px;
-}
 /*Design Inspired by Free Code Camp*/
 #bg-circle{
   background: #385a94;
@@ -127,15 +111,28 @@ box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+.heading {
+    position: relative;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    text-align: center;
+    font-weight:900;
+    color: #212529;
+}
 .inner-heading{
   text-align: left;
-  margin-top: 2px;
-  font-size: 1rem;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left:20px;
+  font-size: 0.75rem;
   text-transform: uppercase;
+  color: #212529;
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0;
+}
+ul {
+  margin-bottom: 1rem;
 }
 .speedbtn li {
     width: 15px;
@@ -152,9 +149,38 @@ box-sizing: border-box;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
+.toggle {
+margin-left: 15px;
+}
+.button {
+  text-align: center;
+  border-radius: 50%;
+  width:45px;
+  height:45px;
+  margin: 4px 17px 3px 1px;
+  background-color: #8bc34a;
+  border-color: #212529;
+  text-transform: uppercase;
+  font-size: .7rem;
+}
+ #turn {
+    position: absolute;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    margin-left: -18px;
+    margin-top: 9px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+  }
 
 /*Mobile Design Inspired from Free Code Camp*/
-@media (min-width: 375px) {
+@media (max-width: 375px) {
+
 #bg-circle{
   height: 300px;
   width: 300px;
@@ -198,50 +224,39 @@ height: 175px;
 width: 175px;
 margin: -87.5px 0px 0px -87.5px;
 }
+ .heading {
+    position: relative;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight:900;
+    color: #212529;
 }
-/*Responsive for Tablet Devices*/
-@media (min-width: 768px) {
-#bg-circle {
-  height: 400px;
-  width: 400px;
-    }
-#green {
-height: 200px;
-width: 200px;
-border-radius: 200px 0 0 0;
--moz-border-radius: 200px 0 0 0;
--webkit-border-radius: 200px 0 0 0;
-margin: -200px 0px 0px -200px;
+.inner-heading{
+  margin-top: 5px;
+  margin-left: -2px;
+  font-size: 0.5rem;
 }
-#red {
- height: 200px;
- width: 200px;
- border-radius: 0 200px 0 0;
- -moz-border-radius: 0 200px 0 0;
- -webkit-border-radius: 0 200px 0 0;
- margin: -200px 0px 0px 0px;
-}
+.list-inline-item:not(:last-child){
 
-#yellow {
- height: 200px;
- width: 200px;
- border-radius: 0 0 0 200px;
- -moz-border-radius: 0 0 0 200px;
- -webkit-border-radius: 0 0 0 200px;
-  margin: 0px -200px 0px -200px;
 }
-#blue {
-height: 200px;
-width: 200px;
-border-radius: 0 0 200px 0;
--moz-border-radius: 0 0 200px 0;
--webkit-border-radius: 0 0 200px 0;
-margin: 0px 0px -200px 0px;
+ul {
+  margin-bottom: 0rem;
 }
+.speedbtn li {
 
-#inner-circle {
-height: 200px;
-width: 200px;
-margin: -100px 0px 0px -100px;
+}
+.toggle {
+
+}
+.button {
+margin: 17px 3px -4px -14px;
+}
+#turn {
+font-size: 15px;
+height: 20px;
+width: 35px;
+margin-left: -15px;
+margin-top: 18px; 
 }
 }

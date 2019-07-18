@@ -8,6 +8,18 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <audio id="clip1">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+  </audio>
+  <audio id="clip2">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+  </audio>
+  <audio id="clip3">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+  </audio>
+  <audio id="clip4">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+  </audio>
     <title>Simon Game</title>
 </head>
 
@@ -23,29 +35,48 @@
                 <div id="blue"></div>
                 <div id="inner-circle">
                     <h5 class="heading">simon</h5>
-                    <div class="col-10">
-                        <h5 class="inner-heading">Speed</h5>
-                        <ul class="list-inline speedbtn">
-                            <li class="list-inline-item">1</li>
-                             <li class="list-inline-item">2</li>
-                              <li class="list-inline-item">3</li>
-                               <li class="list-inline-item">4</li>
-                        </ul>
+                    <div class="container">
+                        <div class="row rowstyle">
+                            <div class="col-8 colstyle">
+                                <h5 class="inner-heading">Speed</h5>
+                                <ul class="list-inline speedbtn">
+                                    <li class="list-inline-item" id="level1">1</li>
+                                    <li class="list-inline-item" id="level2">2</li>
+                                    <li class="list-inline-item" id="level3">3</li>
+                                    <li class="list-inline-item" id="level4">4</li>
+                                </ul>
+                            </div>
+                            <div class="col-4 colstyle">
+                                <h5 class="inner-heading">Strict</h5>
+                                <input type="checkbox" class="toggle" id="strict">
+                            </div>
+                        </div>
+                        <div class="row rowstyle">
+                            <div class="col-4 colstyle">
+                                <h5 class="inner-heading">Power</h5>
+                                <input type="checkbox" class="toggle" id="on">
+                            </div>
+                            <div class="col-4 colstyle">
+                                <button class="button" id="start">Start</button>
+                            </div>
+                            <div class="col-4 colstyle">
+                                <div id="turn"></div>
+                                <h5 class="inner-heading">Count</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <h5 class="inner-heading">Strict</h5>
-                    </div>
-
-
-
                 </div>
             </div>
 
             <div class="col-sm-12 col-lg-6 colstyle">
                 <h5>How to Play!</h5>
                 <ol>
-                    <li></li>
+                    <li>Click the power button.</li>
+                    <li>Choose your level.</li>
+                    <li>Click Start.</li>
+                    <li>Correctly repeat Simon sequence.</li>
                 </ol>
+
             </div>
 
         </div>
@@ -53,6 +84,7 @@
 
 
     </div>
+   <script  src="assets/js/index.js"></script>
 </body>
 
 </html>
