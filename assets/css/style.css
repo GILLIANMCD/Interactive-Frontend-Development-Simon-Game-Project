@@ -134,7 +134,7 @@ box-sizing: border-box;
 ul {
   margin-bottom: 1rem;
 }
-.speedbtn li {
+.levelbtn li {
     width: 15px;
     height: 15px;
     padding: 7px 0;
@@ -148,6 +148,11 @@ ul {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}
+
+.levelbtn li:hover {
+  background: #212529;
+  cursor: grab;
 }
 .toggle {
 margin-left: 15px;

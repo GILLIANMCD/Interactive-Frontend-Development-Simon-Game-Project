@@ -8,12 +8,13 @@ var playerOrder = [];
 var flash;
 var turn;
 var good;
+var rounds;
 var compTurn;
 var intervalId;
-var level1;
-var level2;
-var level3;
-var level4;
+//var level1;
+//var level2;
+//var level3;
+//var level4;
 var strict = false;
 var noise = true;
 var on = false;
@@ -24,10 +25,10 @@ const green = document.querySelector("#green");
 const red = document.querySelector("#red");
 const yellow = document.querySelector("#yellow");
 const blue = document.querySelector("#blue");
-const level1 = document.querySelector("level1");
-const level2 = document.querySelector("level2");
-const level3 = document.querySelector("level3");
-const level4 = document.querySelector("level4");
+//const level1 = document.querySelector("#level1");
+//const level2 = document.querySelector("#level2");
+//const level3 = document.querySelector("#level3");
+//const level4 = document.querySelector("#level4");
 const strictButton = document.querySelector("#strict");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
@@ -57,7 +58,21 @@ startButton.addEventListener('click', (event) =>{
         play ();
     }
 });
+/*
+level1.addEventListener ('click', function (){
+  rounds = 8;
+});
 
+level2.addEventListener ('click' function (){
+  rounds = 14;
+});
+level3.addEventListener ('click' function (){
+  rounds = 20;
+});
+level4.addEventListener ('click' function (){
+  rounds = 31;
+});
+*/
 function play() {
   win = false;
   order = [];
@@ -203,7 +218,7 @@ function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     good = false;
 
-  if (playerOrder.length == 3 && good) {
+  if (playerOrder.length == rounds && good) {
     winGame();
   }
 
